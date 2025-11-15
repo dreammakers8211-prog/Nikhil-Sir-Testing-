@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Raheja Lunaris | 2 & 3 BHK Luxury Residences in Juinagar, Navi Mumbai |
+      Starting from ₹1.10 Cr
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      // Initialize EmailJS with your public key
+      (function () {
+        emailjs.init("user_YOUR_PUBLIC_KEY");
+      })();
+    </script>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav aria-label="Primary" class="shadow-sm">
+      <div
+        class="container mx-auto px-4 flex items-center justify-between h-14"
+      >
+        <div class="flex items-center gap-20">
+          <!-- Logo -->
+          <div class="logo" aria-label="Godrej City Panvel Logo">
+            <img
+              src="https://res.cloudinary.com/deu6avikv/image/upload/v1763053468/logo_hwsum2.svg"
+              alt="Godrej City Panvel Logo"
+              class="h-10 w-auto"
+            />
+          </div>
+
+          <!-- Desktop Nav Links -->
+          <ul
+            class="desktop-nav md:flex gap-8 text-gray-600 text-sm font-semibold overflow-x-auto"
+            role="menubar"
+            aria-label="Main navigation"
+          >
+            <li>
+              <a href="#" class="nav-link active" role="menuitem">
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-home"></i
+                ></span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#price-section"
+                class="nav-link price-nav-link"
+                role="menuitem"
+              >
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-tag"></i
+                ></span>
+                Price
+              </a>
+            </li>
+            <li>
+              <a
+                href="#site-plan-section"
+                class="nav-link flex items-center gap-2 whitespace-nowrap"
+                role="menuitem"
+              >
+                <i class="far fa-building text-primary"></i>
+                <span>Site Plan</span>
+              </a>
+            </li>
+            <li>
+              <a href="#amenities-section" class="nav-link" role="menuitem">
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-swimming-pool"></i
+                ></span>
+                Amenities
+              </a>
+            </li>
+            <li>
+              <a href="#gallery-section">
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-images"></i
+                ></span>
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#location-section">
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></span>
+                Location
+              </a>
+            </li>
+            <li class="has-dropdown">
+              <a href="#" class="nav-link" role="menuitem" id="brochureLink">
+                <span class="nav-icon" aria-hidden="true"
+                  ><i class="fas fa-file-download"></i
+                ></span>
+                Brochure
+                <span class="dropdown-icon"><i class=""></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          class="mobile-menu-btn md:hidden"
+          aria-label="Open navigation menu"
+          id="mobileMenuBtn"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button
+          class="close-menu"
+          aria-label="Close navigation menu"
+          id="closeMenu"
+        >
+          ✕
+        </button>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-home"></i
+              ></span>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#price-section" class="price-nav-link">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-tag"></i
+              ></span>
+              Price
+            </a>
+          </li>
+          <li>
+            <a href="#site-plan-section">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-map"></i
+              ></span>
+              Site Plan
+            </a>
+          </li>
+          <li>
+            <a href="#amenities-section">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-swimming-pool"></i
+              ></span>
+              Amenities
+            </a>
+          </li>
+          <li>
+            <a href="#gallery-section">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-images"></i
+              ></span>
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="#location-section">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-map-marker-alt"></i
+              ></span>
+              Location
+            </a>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" id="mobileBrochureLink">
+              <span class="nav-icon" aria-hidden="true"
+                ><i class="fas fa-file-download"></i
+              ></span>
+              Brochure
+              <span class="dropdown-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </a>
+          </li>
+          <li class="mt-6 pt-4 text-sm font-bold">
+            <span class="" aria-hidden="true"><i class=""></i></span> <br />
+          </li>
+          <li>
+            <button class="" id="mobileInterestedBtn">
+              <i class=""></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-container" role="main">
+      <div class="slider-container">
+        <!-- Left Side: Slider and Info Card -->
+        <section
+          class="relative slider"
+          aria-label="Property image gallery slider"
+        >
+          <!-- Images container with overlay -->
+          <div class="slider-image-container">
+            <img
+              src="https://res.cloudinary.com/deu6avikv/image/upload/v1763030195/Elevation_View_resized_axcum4.jpg"
+              alt="Modern residential building exterior with pool area and garden blooming with pink flowers at Godrej City Panvel"
+              class="slider-image active"
+            />
+            <img
+              src="https://res.cloudinary.com/deu6avikv/image/upload/v1763030196/Half_Half_Night_resized_kke6m1.jpg"
+              class="slider-image"
+              alt="Evening view of modern gymnasium and community center building at Godrej City Panvel"
+            />
+            <img
+              src="https://res.cloudinary.com/deu6avikv/image/upload/v1762776715/WhatsApp_Image_2025-10-30_at_21.07.03_7fad0660_s2myvj.jpg"
+              class="slider-image"
+              alt="Modern residential building facade with balcony gardens and sky view at Godrej City Panvel"
+            />
+            <img
+              src="https://res.cloudinary.com/deu6avikv/image/upload/v1762776716/WhatsApp_Image_2025-10-30_at_21.07.04_d82af13d_uvkctr.jpg"
+              class="slider-image"
+              alt="Spacious courtyard swimming pool surrounded by trees and residential units at Godrej City Panvel"
+            />
+            <div class="slider-overlay"></div>
+          </div>
+
+          <!-- Slider Controls - UPDATED: Arrows on both sides of dots -->
+          <div
+            class="slider-controls-container"
+            role="group"
+            aria-label="Image slider controls"
+          >
+            <!-- Left Arrow -->
+            <button
+              aria-label="Previous Image"
+              class="slider-arrow"
+              id="prevArrow"
+              type="button"
+            >
+              &#10094;
+            </button>
+
+            <!-- Dots -->
+            <div
+              class="slider-dots"
+              role="tablist"
+              aria-label="Image slider navigation dots"
+            >
+              <button
+                role="tab"
+                aria-selected="true"
+                aria-controls="slide1"
+                class="active"
+                data-slide="0"
+                tabindex="0"
+              ></button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="slide2"
+                data-slide="1"
+                tabindex="-1"
+              ></button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="slide3"
+                data-slide="2"
+                tabindex="-1"
+              ></button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="slide4"
+                data-slide="3"
+                tabindex="-1"
+              ></button>
+            </div>
+
+            <!-- Right Arrow -->
+            <button
+              aria-label="Next Image"
+              class="slider-arrow"
+              id="nextArrow"
+              type="button"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <!-- Info Card - Smaller version -->
+
+          <aside
+            class="info-card"
+            aria-label="Project information card"
+            id="infoCard"
+          >
+            <div class="info-tag">New Launch</div>
+            <h2 class="info-title" tabindex="0">Raheja Lunaris</h2>
+            <p class="info-subtitle" tabindex="0">At Juinagar, Navi Mumbai</p>
+            <p class="info-by" tabindex="0">By Raheja Universal</p>
+            <div class="info-btn-group" aria-label="EOI Amount">
+              Limited Offers End in 5 Days*
+            </div>
+            <div class="benefits-container">
+              <button
+                class="info-btn-benefit"
+                aria-disabled="true"
+                tabindex="-1"
+              >
+                Floors G + 32 Storeys
+              </button>
+
+              <button
+                class="info-btn-benefit"
+                aria-disabled="true"
+                tabindex="-1"
+              >
+                Possession December - 2029
+              </button>
+              <button
+                class="info-btn-benefit"
+                aria-disabled="true"
+                tabindex="-1"
+              >
+                Land Parcel - 60 Acres
+              </button>
+            </div>
+            <div class="info-price-section" tabindex="0">
+              Luxurious 2 &amp; 3 BHK Residences Starting From
+              <span class="price-value" aria-label="Price in crores"
+                >₹ 1.10 Cr*</span
+              >
+              <span class="price-text">Onwards</span>
+            </div>
+            <button
+              class="enquire-btn"
+              aria-label="Enquire Now Form Button"
+              type="button"
+              id="enquireBtnMain"
+            >
+              Enquire Now
+            </button>
+            <p class="rera-info" tabindex="0">RERA :P51700076867 <br /></p>
+          </aside>
+        </section>
+
+        <!-- Right Side: Enquiry Form Panel -->
+        <aside class="right-panel" aria-label="Enquiry form and contact panel">
+          <div
+            class="top-request"
+            role="region"
+            aria-label="Organize site visit and phone contact"
+          >
+            <div class="organize-visit">Organize Site Visit</div>
+            <a
+              href="tel:+919870751750"
+              class="phone-contact"
+              aria-label="Call phone number +91 9870751750"
+            >
+              <i class="fas fa-phone-alt"></i> +91 9870751750
+            </a>
+          </div>
+          <div
+            class="top-request"
+            role="region"
+            aria-label="Request callback and WhatsApp chat"
+          >
+            <button
+              class="request-btn"
+              type="button"
+              id="requestCallbackBtn"
+              aria-label="Request Call Back"
+            >
+              <i class="fas fa-phone-volume mr-1"></i> Request Call Back
+            </button>
+            <a
+              href="https://wa.me/919870751750"
+              target="_blank"
+              rel="noopener"
+              class="whatsapp-btn"
+              aria-label="WhatsApp chat link"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M20.52 3.48a11.955 11.955 0 0 0-13.942 0 a11.954 11.954 0 0 0-4.1 8.463 a12.012 12.012 0 0 0 1.521 6.634L2 22l3.604-1.24a11.951 11.951 0 0 0 7.293 2.476c3.17 0 6.149-1.237 8.364-3.482a11.96 11.96 0 0 0 3.482-8.364c0-3.17-1.237-6.149-3.482-8.364Zm-7.647 14.758a6.768 6.768 0 0 1-3.461-.94l-.247-.146-2.07 .712.696-2.022-.158-.263a6.77 6.77 0 0 1-.99-3.746c0-3.74 3.041-6.772 6.792-6.772 1.81 0 3.51.707 4.78 1.991a6.804 6.804 0 0 1 1.986 4.790c0 3.74-3.04 6.77-6.78 6.77Z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+            <h3><i class="fas fa-info-circle mr-1"></i> ENQUIRE NOW</h3>
+
+            <!-- Name Field -->
+            <label for="nameInput" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="nameInput"
+              name="name"
+              placeholder="Name"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+
+            <!-- Email Field - NEW -->
+            <label for="emailInput" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="emailInput"
+              name="email"
+              placeholder="Email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+
+            <!-- Mobile Field -->
+            <label for="mobileInput" class="sr-only">Mobile Number</label>
+            <div class="phone-wrapper">
+              <input
+                type="tel"
+                id="mobileInput"
+                name="mobile"
+                placeholder="Mobile Number"
+                required
+                aria-required="true"
+                pattern="[0-9]{10}"
+                inputmode="numeric"
+                maxlength="10"
+                autocomplete="tel"
+              />
+            </div>
+
+            <!-- Consent Checkbox - Font size reduced -->
+            <div class="consent-group">
+              <input
+                type="checkbox"
+                id="consentCheckbox"
+                required
+                aria-required="true"
+                checked
+              />
+              <label for="consentCheckbox">
+                By submitting, I confirm that I have read and agree to the
+                <a href="#">Privacy Policy</a> and
+                <a href="#">Terms & Conditions</a>. I allow Neocresthomes to
+                reach me through call, SMS, email, or WhatsApp for updates and
+                offers, overriding any DNC/NDNC preference.
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              class="submit-btn"
+              type="submit"
+              aria-label="Submit Enquiry Form"
+            >
+              <i class="fas fa-paper-plane mr-1"></i> Submit
+            </button>
+
+            <!-- Cab Info -->
+            <div
+              class="cab-info"
+              aria-label="Free pickup and drop cab service info"
+            >
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                style="max-width: 120%; border-radius: 0.5rem"
+              >
+                <source
+                  src="https://res.cloudinary.com/dhwdk6utg/video/upload/v1756713702/WhatsApp_Video_2025-08-23_at_13.43.52_42446ca5_hltcll.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </form>
+        </aside>
+      </div>
+      <section class="welcome-section py-12" aria-labelledby="welcomeHeading">
+        <div
+          class="welcome-container w-full mx-0 px-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+        >
+          <!-- Text Content -->
+          <div class="welcome-content text-center md:text-left">
+            <h1
+              class="text-custom-teal text-3xl md:text-4xl font-semibold mb-6"
+            >
+              Welcome to Raheja Lunaris
+            </h1>
+            <p class="content-paragraph mb-4">
+              Raheja Lunaris is an astonishing residential tower in the
+              exceptional township - Raheja District in Vashi NX. It comprises 2
+              & 3 BHK apartments efficiently designed with the finest interiors,
+              contemporary features, and branded CP fittings.
+            </p>
+            <p class="content-paragraph mb-6">
+              The efficient layout of apartments ensures optimum space
+              utilisation with zero wastage. The township comprises stunning
+              residential, commercial, and retail clusters. Along with the
+              proposed 5-acre District Park, the community offers amenities like
+              a clubhouse, spa, indoor games, swimming pool, kids play area,
+              jogging track, senior citizen corner, gymnasium, banquet hall, and
+              more.
+            </p>
+            <div class="flex justify-center">
+              <button
+                aria-label="Download brochure"
+                class="download-brochure-btn"
+                id="downloadBrochureBtn"
+              >
+                <i class="fas fa-download"></i> Download Brochure
+              </button>
+            </div>
+          </div>
+<!-- Image Content -->
+<div class="welcome-video">
+  <div class="video-container rounded-lg overflow-hidden shadow-md">
+    <img
+      src="https://res.cloudinary.com/deu6avikv/image/upload/v1763030196/Half_Half_Night_resized_kke6m1.jpg"
+      alt="Aerial view of Godrej City Panvel township with greenery and towers."
+      class="w-full h-auto object-cover"
+    />
+  </div>
+</div>
+
+
+        </div>
+      </section>
+
+      <div class="price-heading-wrapper">
+        <h5 class="price-heading">Price List</h5>
+      </div>
+
+      <section
+        id="price-section"
+        class="price-section"
+        aria-label="Price list of homes"
+      >
+        <div class="price-container">
+          <article
+            class="price-card"
+            tabindex="0"
+            aria-label="2 BHK Homes price details"
+          >
+            <div class="price-card-header">2 BHK Homes</div>
+            <div class="price-card-content">
+              <p><span class="label">Area :</span>&nbsp; 452 Sq.Ft.</p>
+              <p><span class="label">Price :</span>&nbsp; ₹ 1.10 Cr* Onwards</p>
+              <div class="price-dashed-separator" aria-hidden="true"></div>
+              <button
+                class="price-btn-request price-request-btn"
+                aria-label="Request a call for 2 BHK Homes"
+              >
+                Request A Call
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M15 6l6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="price-card"
+            tabindex="0"
+            aria-label="2 BHK Signature price details"
+          >
+            <div class="price-card-header">3 BHK Signature</div>
+            <div class="price-card-content">
+              <p><span class="label">Area :</span>&nbsp; 725 Sq.ft</p>
+              <p><span class="label">Price :</span>&nbsp; ₹ 1.90 Cr* Onwards</p>
+              <div class="price-dashed-separator" aria-hidden="true"></div>
+              <button
+                class="price-btn-request price-request-btn"
+                aria-label="Request a call for 2 BHK Signature"
+              >
+                Request A Call
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M15 6l6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="price-card"
+            tabindex="0"
+            aria-label="3 BHK Homes price details"
+          >
+            <div class="price-card-header">2 BHK Homes</div>
+            <div class="price-card-content">
+              <p><span class="label">Area :</span>&nbsp; 649 Sq.Ft</p>
+              <p><span class="label">Price :</span>&nbsp; ₹ 1.60 Cr* Onwards</p>
+              <div class="price-dashed-separator" aria-hidden="true"></div>
+              <button
+                class="price-btn-request price-request-btn"
+                aria-label="Request a call for 3 BHK Homes"
+              >
+                Request A Call
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M15 6l6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Site Plan Section -->
+      <section
+        id="site-plan-section"
+        class="site-plan-section"
+        aria-label="Project configuration and site plan"
+      >
+        <div class="site-plan-heading-wrapper">
+          <h5 class="site-plan-heading">PROJECT CONFIGURATION</h5>
+        </div>
+
+        <div class="site-plan-container">
+          <table
+            class="site-plan-table"
+            role="grid"
+            aria-label="Project Configuration Table"
+          >
+            <thead>
+              <tr>
+                <th scope="col">TYPOLOGY</th>
+                <th scope="col">CARPET AREA</th>
+                <th scope="col">FLOOR PLAN</th>
+                <th scope="col">PRICE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Typology">2 BHK Homes</td>
+                <td data-label="Carpet Area">
+                  <button
+                    type="button"
+                    aria-label="View carpet areas for 2 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW CARPET AREAS
+                  </button>
+                </td>
+                <td data-label="Floor Plan">
+                  <button
+                    type="button"
+                    aria-label="View floor plan for 2 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW FLOOR PLAN
+                  </button>
+                </td>
+                <td data-label="Price">
+                  <button
+                    type="button"
+                    aria-label="Get price for 2 bedroom"
+                    class="site-plan-btn"
+                  >
+                    GET PRICE
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Typology">3 BHK Signature</td>
+                <td data-label="Carpet Area">
+                  <button
+                    type="button"
+                    aria-label="View carpet areas for 3 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW CARPET AREAS
+                  </button>
+                </td>
+                <td data-label="Floor Plan">
+                  <button
+                    type="button"
+                    aria-label="View floor plan for 3 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW FLOOR PLAN
+                  </button>
+                </td>
+                <td data-label="Price">
+                  <button
+                    type="button"
+                    aria-label="Get price for 3 bedroom"
+                    class="site-plan-btn"
+                  >
+                    GET PRICE
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Typology">3 BHK Homes</td>
+                <td data-label="Carpet Area">
+                  <button
+                    type="button"
+                    aria-label="View carpet areas for 4 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW CARPET AREAS
+                  </button>
+                </td>
+                <td data-label="Floor Plan">
+                  <button
+                    type="button"
+                    aria-label="View floor plan for 4 bedroom"
+                    class="site-plan-btn"
+                  >
+                    VIEW FLOOR PLAN
+                  </button>
+                </td>
+                <td data-label="Price">
+                  <button
+                    type="button"
+                    aria-label="Get price for 4 bedroom"
+                    class="site-plan-btn"
+                  >
+                    GET PRICE
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section
+        id="amenities-section"
+        class="amenities-section"
+        aria-label="Amenities of Godrej City Panvel"
+      >
+        <div class="amenities-heading-wrapper">
+          <h5 class="amenities-heading">AMENITIES</h5>
+        </div>
+
+        <div class="amenities-container">
+          <!-- Left arrow -->
+          <button
+            aria-label="Scroll left"
+            id="scrollLeftBtn"
+            class="arrow-btn absolute left-0 top-1/2 -translate-y-1/2 z-20 shadow-md"
+          >
+            <svg class="arrow-svg" fill="none" viewBox="0 0 24 24">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+
+          <!-- Cards container with horizontal scroll -->
+          <div
+            id="carousel"
+            class="carousel-scroll scroll-smooth overflow-x-auto flex gap-6 max-w-full px-10 py-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-teal-700 scrollbar-track-slate-300"
+            tabindex="0"
+            aria-label="Amenities carousel"
+          >
+            <!-- Card 1 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="0"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539060/04_1_mj3fmx.webp"
+                alt="Artistic impression of a green juice bar outdoors with people socializing under a pergola covered with greenery"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd32b8cd-5421-42b6-94f2-eac2b6080543.png';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Juice Bar</div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="1"
+            >
+              <img
+                src="https://5.imimg.com/data5/SELLER/Default/2023/9/344359640/VH/BV/QD/8899618/reflexology-pebbles-stone-1000x1000.jpg"
+                alt="Artistic impression of an acupressure pathway with stone textures and small plants in a residential garden at sunset"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://placehold.co/360x220?text=Image+not+found&style=modern&bg=eee&fg=ccc';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Acupressure Pathway</div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="2"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539061/05_qvxlnj.webp"
+                alt="Artistic impression of a kids play area with vibrant playground equipment and climbing walls during sunset"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://placehold.co/360x220?text=Image+not+found&style=modern&bg=eee&fg=ccc';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Kids play Area</div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="3"
+            >
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e8b6ac8-9808-4713-8bba-29b4d212575e.png"
+                alt="Artistic impression of a party lounge deck with seating and people enjoying a sunset gathering"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://placehold.co/360x220?text=Image+not+found&style=modern&bg=eee&fg=ccc';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Party Lounge Deck</div>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="4"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539060/02_1_y9jbri.webp"
+                alt="Artistic impression of a sit-out area with comfortable seating and shaded pergola surrounded by greenery"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://placehold.co/360x220?text=Image+not+found&style=modern&bg=eee&fg=ccc';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Spa & Body Massage Area</div>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+              class="amenity-card relative flex-shrink-0 snap-start w-[320px] sm:w-[360px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer select-none"
+              data-index="5"
+            >
+              <img
+                src="https://static1.mansionglobal.com/production/media/article-images/c7e5866d12541ffd47f82ba8ad5977d2/large_Lesley-Lawson.jpg"
+                alt="Artistic impression of a gym at dusk with modern fitness machines and ambient lighting through wide windows"
+                loading="lazy"
+                class="rounded-lg rounded-tr-[1.75rem] object-cover w-full h-56"
+                onerror="this.onerror=null;this.src='https://placehold.co/360x220?text=Image+not+found&style=modern&bg=eee&fg=ccc';"
+              />
+              <div class="overlay-topright">Artistic Impression</div>
+              <div class="label-bottomleft">Gym dusk</div>
+            </article>
+          </div>
+
+          <!-- Right arrow -->
+          <button
+            aria-label="Scroll right"
+            id="scrollRightBtn"
+            class="arrow-btn absolute right-0 top-1/2 -translate-y-1/2 z-20 shadow-md"
+          >
+            <svg class="arrow-svg" fill="none" viewBox="0 0 24 24">
+              <path d="M9 6l6 6-6 6"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section
+        id="gallery-section"
+        class="gallery-section"
+        aria-label="Interior design gallery"
+      >
+        <div class="gallery-heading-wrapper">
+          <h5 class="gallery-heading">GALLERY</h5>
+        </div>
+
+        <div class="gallery-container">
+          <div
+            class="gallery-grid"
+            aria-label="Gallery of house interior images"
+          >
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc1"
+              role="button"
+              aria-label="Dining room with modern decor and black pendant lights"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539061/10_lsslxi.webp"
+                alt="Modern dining room interior with a glass dining table, beige upholstered chairs, dark pendant lights, and golden patterned wallpaper"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca4ce5a7-1bd3-420a-a7de-e248cf4c4ad3.png';"
+              />
+              <p class="caption" id="desc1">Dining Room Interior</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc1"
+              role="button"
+              aria-label="Dining room with modern decor and black pendant lights"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539060/03_1_hnmz4q.webp"
+                alt="Modern dining room interior with a glass dining table, beige upholstered chairs, dark pendant lights, and golden patterned wallpaper"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca4ce5a7-1bd3-420a-a7de-e248cf4c4ad3.png';"
+              />
+              <p class="caption" id="desc1">Meditation Area</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc1"
+              role="button"
+              aria-label="Dining room with modern decor and black pendant lights"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539062/02_vuougy.webp"
+                alt="Modern dining room interior with a glass dining table, beige upholstered chairs, dark pendant lights, and golden patterned wallpaper"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca4ce5a7-1bd3-420a-a7de-e248cf4c4ad3.png';"
+              />
+              <p class="caption" id="desc1">Home Office</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc2"
+              role="button"
+              aria-label="Bedroom with double bed, textured wall, and balcony doors"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539061/09_yfewm1.webp"
+                alt="Spacious bedroom with large double bed, textured brown wall, two bedside lamps, and sliding glass doors opening to a balcony"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+not+available';"
+              />
+              <p class="caption" id="desc2">Bedroom with Balcony</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc3"
+              role="button"
+              aria-label="Modern kitchen with white cabinets and stainless-steel appliances"
+            >
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5552ed0b-9508-4f05-996d-4bb7a94ba584.png"
+                alt="Sleek modern kitchen featuring white cabinetry, stainless steel appliances, black granite countertops, and warm ambient lighting"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+not+available';"
+              />
+              <p class="caption" id="desc3">Modern Kitchen</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc4"
+              role="button"
+              aria-label="Living room with grey sofas, wall art, and view through balcony door"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539061/08_yvrfzk.webp"
+                alt="Contemporary living room with grey sofas, colorful cushions, a large coffee table, framed artwork on the wall, and floor-to-ceiling balcony door"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+not+available';"
+              />
+              <p class="caption" id="desc4">Sports Court</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc5"
+              role="button"
+              aria-label="Bathroom with toilet, basin, mirror, and shower"
+            >
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0d6d2d48-eedf-4759-a8b8-54b21dcc1bdd.png"
+                alt="Modern bathroom containing a white toilet, pedestal sink, wall-mounted mirror with LED lighting, tiled walls, and shower area"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+not+available';"
+              />
+              <p class="caption" id="desc5">Bathroom</p>
+            </article>
+            <article
+              class="gallery-card"
+              tabindex="0"
+              aria-describedby="desc6"
+              role="button"
+              aria-label="Bedroom with entertainment unit and patterned wallpaper"
+            >
+              <img
+                src="https://res.cloudinary.com/dhwdk6utg/image/upload/v1756539060/Video_Thumbnail_pstilw.webp"
+                alt="Cozy bedroom featuring dark bed linens, patterned wallpaper behind bed, a floating shelf with books, and a wall-mounted TV"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+not+available';"
+              />
+              <p class="caption" id="desc6">Swimming Pool View</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section
+        id="location-section"
+        class="location-section"
+        aria-label="Location details of Godrej City Panvel"
+      >
+        <div class="location-heading-wrapper">
+          <h5 class="location-heading">PRIME LOCATION</h5>
+        </div>
+
+        <div class="location-container">
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2332623767643!2d73.02710007750174!3d19.053479106668988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c10039d21c71%3A0x35653c538005610a!2sLunaris%20By%20Raheja%20Universal!5e0!3m2!1sen!2sin!4v1762973914039!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="location-content">
+            <h3 class="location-subheading">
+              Strategic Location in Juinagar, Navi Mumbai
+            </h3>
+            <p class="location-description">
+              Raheja Lunaris enjoys a prime location in the rapidly developing
+              node of Juinagar, Navi Mumbai. Strategically positioned with
+              excellent connectivity to major business hubs, educational
+              institutions, healthcare facilities, and entertainment zones.
+            </p>
+
+            <div class="location-features">
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-train"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Juinagar Railway Station – 2 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-ticket-alt"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Vashi Toll Plaza – 5.9 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-road"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Palm Beach Road Junction – 6.5 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-highway"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Mumbai–Pune Expressway – 7.9 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Eastern Freeway – 14.3 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <span class="location-feature-text"
+                  >SCLR (Santacruz–Chembur Link Road) – 15.3 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-bridge"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Atal Setu (MTHL) – 16 Km</span
+                >
+              </div>
+
+              <div class="location-feature">
+                <div class="location-feature-icon">
+                  <i class="fas fa-plane"></i>
+                </div>
+                <span class="location-feature-text"
+                  >Upcoming Navi Mumbai International Airport – 23.9 Km</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="location-button-wrapper"
+              style="text-align: center; margin-top: 15px"
+            >
+              <a href="#modalOverlay" class="location-cta" id="locationCta">
+                <i class="fas fa-directions mr-2"></i> Request For Location
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Godrej Section -->
+      <section
+        id="about-godrej-section"
+        class="about-godrej-section"
+        aria-label="About Godrej Group"
+      >
+        <div class="about-godrej-heading-wrapper">
+          <h5 class="about-godrej-heading">ABOUT Raheja Universal</h5>
+        </div>
+
+        <div class="about-godrej-container">
+          <div class="about-godrej-content">
+            <h2>About Raheja Universal</h2>
+            <p>
+              Founded in 1980, Raheja Universal is a leading real estate firm in
+              the Mumbai Metropolitan Region (MMR). While the company started by
+              developing luxury residential properties in its early years, it
+              has now expanded to affordable residences, IT parks & commercial
+              towers. With its portfolio boasting more than 50 properties,
+              Raheja Universal has won many awards in recent years.
+            </p>
+
+            <section aria-labelledby="rera-info-title" class="mt-8 text-center">
+              <h3 id="rera-info-title" class="font-semibold mb-4 text-lg">
+                RERA Information
+              </h3>
+
+              <div
+                class="rera-info-container flex flex-col items-center justify-center"
+              >
+                <img
+                  src="https://www.rahejaslunarisjuinagar.com/assets/img/qrcode/qr_code.webp"
+                  alt="Black and white QR code for Raheja Lunaris Juinagar RERA registration"
+                  class="rera-qr w-32 h-32 mb-4"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d0e137d-6fb3-45fc-ade0-a88ed4b57734.png';"
+                />
+
+                <div class="rera-text max-w-xl text-center">
+                  <p>
+                    <strong>Raheja Lunaris Juinagar</strong><br />RERA No :
+                    <span class="important">P51700076867</span>
+                  </p>
+                  <p class="mt-2 text-sm text-gray-600">
+                    According to the RERA Act 2016 of the Government of India,
+                    all projects of the Raheja Lunaris including the Raheja Lunaris Juinagar, are listed on the Maharashtra
+                    Government's RERA website under registered projects.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <ul class="checklist">
+              <li>
+                Project Registered under Government of India RERA Act 2016
+              </li>
+              <li>MAHA RERA Project Registration No: P51700076867</li>
+            </ul>
+
+            <p class="disclaimer">
+              <strong>Disclaimer:</strong> We are an authorised marketing
+              partner for this project. Provided content is given by respective
+              owners and this website and content is for information purpose
+              only and it does not constitute any offer to avail for any
+              services. Prices mentioned are subject to change without prior
+              notice and properties mentioned are subject to availability. You
+              can expect a call, SMS or emails on details registered with us.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <!-- Footer -->
+      <footer class="footer" role="contentinfo">
+        © 2025  Raheja Universal. All Rights Reserved.
+      </footer>
+
+      <!-- Lightbox -->
+      <div class="gallery-lightbox-overlay">
+        <div class="gallery-lightbox-content">
+          <button class="gallery-lightbox-close">&times;</button>
+          <img src="" alt="" />
+          <p class="lightbox-caption"></p>
+          <div class="lightbox-nav">
+            <button class="lightbox-nav-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- I'm Interested Button -->
+      <div class="interested-btn-wrapper">
+        <button class="interested-btn" id="interestedBtn">
+          <i class="fas fa-heart mr-1"></i> I'm Interested
+        </button>
+      </div>
+
+      <div class="brochure-btn-wrapper">
+        <button class="interested-btn" id="brochureBtn">
+          <i class="fas fa-download mr-1"></i> Get Brochure
+        </button>
+      </div>
+
+      <!-- Image preloader (hidden) -->
+      <div class="image-preloader">
+        <img
+          src="https://westsquares-seawoods.com/lnt/img/webp/b2-1400w.webp"
+          alt="Preload image 1"
+        />
+        <img
+          src="https://westsquares-seawoods.com/lnt/img/webp/b4-1400w.webp"
+          alt="Preload image 2"
+        />
+        <img
+          src="https://westsquares-seawoods.com/lnt/img/webp/b1-1400w.webp"
+          alt="Preload image 3"
+        />
+        <img
+          src="https://westsquares-seawoods.com/lnt/img/webp/b3-1400w.webp"
+          alt="Preload image 4"
+        />
+      </div>
+    </main>
+
+    <!-- Modal Popup -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalHeading"
+      aria-describedby="modalDescription"
+    >
+      <div class="modal-popup">
+        <button
+          class="modal-close-btn"
+          aria-label="Close contact form"
+          id="modalCloseBtn"
+          title="Close form"
+        >
+          &times;
+        </button>
+        <h2 id="modalHeading">Get in Touch With Us</h2>
+        <p class="subtitle" id="modalDescription">
+          Elegant 2 &amp; 3 BHK Deck Residences<br />Starting at ₹1.17 Cr
+        </p>
+
+        <form class="modal-form" id="modalForm" novalidate>
+          <!-- Name Input -->
+          <label for="modalNameInput" class="sr-only">Name</label>
+          <div class="modal-input-group">
+            <div class="modal-input-icon" aria-hidden="true">
+              <!-- User icon SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="20"
+                width="20"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="modalNameInput"
+              name="name"
+              placeholder="Name"
+              required
+              autocomplete="name"
+              aria-required="true"
+            />
+          </div>
+
+          <!-- Mobile Input -->
+          <label for="modalMobileInput" class="sr-only">Mobile Number</label>
+          <div class="modal-input-group">
+            <div class="modal-input-icon" aria-hidden="true">
+              <!-- Phone icon SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="20"
+                width="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.07 12.07 0 0 0 .7 2.81 a2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.35-1.35a2 2 0 0 1 2.11-.45 12.07 12.07 0 0 0 2.81.7 2 2 0 0 1 1.73 2z"
+                ></path>
+              </svg>
+            </div>
+            <div style="display: flex; flex-grow: 1; gap: 0.2rem">
+              <select
+                id="modalCountryCode"
+                name="countryCode"
+                aria-label="Country Code"
+                required
+              >
+                <option value="+91" selected>+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <option value="+61">+61</option>
+                <option value="+81">+81</option>
+              </select>
+              <input
+                type="tel"
+                id="modalMobileInput"
+                name="mobile"
+                placeholder="Mobile"
+                inputmode="tel"
+                minlength="7"
+                maxlength="15"
+                pattern="[0-9\s\-]*"
+                required
+                autocomplete="tel"
+                aria-required="true"
+              />
+            </div>
+          </div>
+
+          <!-- Email Input -->
+          <label for="modalEmailInput" class="sr-only">Email</label>
+          <div class="modal-input-group">
+            <div class="modal-input-icon" aria-hidden="true">
+              <!-- Email Icon SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="20"
+                width="20"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+                <polyline points="3,7 12,13 21,7"></polyline>
+              </svg>
+            </div>
+            <input
+              type="email"
+              id="modalEmailInput"
+              name="email"
+              placeholder="Email"
+              pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+              autocomplete="email"
+              aria-required="true"
+            />
+          </div>
+
+          <!-- Offer Text -->
+          <p class="modal-offer-text" aria-live="polite" aria-atomic="true">
+            Avail Early Bird Offers Now
+          </p>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="modal-submit-btn"
+            aria-label="Submit contact form"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+      <div class="lightbox-content">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          aria-label="Close lightbox"
+        >
+          &times;
+        </button>
+        <img class="lightbox-img" id="lightboxImage" src="" alt="" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-nav">
+          <button
+            class="lightbox-nav-btn"
+            id="lightboxPrev"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+          <button
+            class="lightbox-nav-btn"
+            id="lightboxNext"
+            aria-label="Next image"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
