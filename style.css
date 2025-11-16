@@ -97,6 +97,32 @@ nav .container {
     padding: 0;
 }
 
+@media (max-width: 1024px) {
+    .slider-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .right-panel {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .right-panel {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
 
 /* Background slider - Updated to full width with increased height */
 
@@ -105,6 +131,24 @@ nav .container {
     overflow: hidden;
     height: 650px;
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 350px;
+    }
 }
 
 .slider-image-container {
@@ -141,7 +185,7 @@ nav .container {
 }
 
 
-/* Slider navigation - UPDATED: Arrows on both sides of dots */
+/* Slider navigation - UPDATED: Only dots, no arrows */
 
 .slider-controls-container {
     position: absolute;
@@ -151,31 +195,7 @@ nav .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     z-index: 15;
-}
-
-.slider-arrow {
-    background: var(--dark-green);
-    color: white;
-    border-radius: 50%;
-    padding: 0.5rem 0.6rem;
-    cursor: pointer;
-    opacity: 0.85;
-    transition: all 0.25s ease;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-    border: none;
-}
-
-.slider-arrow:hover {
-    opacity: 1;
-    transform: scale(1.1);
 }
 
 
@@ -386,6 +406,26 @@ nav .container {
     gap: 0.6912rem;
     margin-left: 0.432rem;
     margin-right: 0.432rem;
+}
+
+@media (max-width: 1024px) {
+    .right-panel {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        max-width: 400px;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .right-panel {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        max-width: 400px;
+        top: 0;
+    }
 }
 
 .organize-visit {
@@ -645,6 +685,12 @@ input[type="tel"] {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+}
+
 .mobile-menu-btn span {
     width: 2rem;
     height: 0.25rem;
@@ -668,6 +714,12 @@ input[type="tel"] {
     overflow-y: auto;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
 }
 
 .mobile-menu.active {
@@ -1087,6 +1139,12 @@ input[type="tel"] {
     justify-items: center;
 }
 
+@media (max-width: 768px) {
+    .price-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .price-card {
     background-color: white;
     border-radius: 1rem;
@@ -1097,6 +1155,13 @@ input[type="tel"] {
     padding: 2rem 2.5rem 3rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     user-select: none;
+}
+
+@media (max-width: 768px) {
+    .price-card {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 .price-card:hover {
@@ -1211,6 +1276,20 @@ input[type="tel"] {
     box-shadow: 0 2px 5px rgb(12 40 70 / 0.1);
 }
 
+@media (max-width: 768px) {
+    .site-plan-table {
+        font-size: 0.85rem;
+    }
+    .site-plan-table thead th {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+    .site-plan-table tbody td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+}
+
 .site-plan-table thead {
     background-color: #EF3F3E;
     color: #fff;
@@ -1303,6 +1382,15 @@ input[type="tel"] {
     max-width: 1500px;
     margin: 0 auto;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .amenities-container {
+        padding: 0 1rem;
+    }
+    .arrow-btn {
+        display: none;
+    }
 }
 
 
@@ -1559,6 +1647,28 @@ input[type="tel"] {
     margin-top: 2rem;
 }
 
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    .gallery-card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-heading {
+        font-size: 1.75rem;
+    }
+    .lightbox-caption {
+        font-size: 1rem;
+    }
+}
+
 .gallery-card {
     position: relative;
     overflow: hidden;
@@ -1779,6 +1889,12 @@ input[type="tel"] {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .location-features {
+        grid-template-columns: 1fr;
+    }
+}
+
 .location-feature {
     display: flex;
     align-items: center;
@@ -1818,21 +1934,21 @@ input[type="tel"] {
 }
 
 
-/* About Godrej Section Styles */
+/* About Raheja Section Styles */
 
-.about-godrej-section {
+.about-raheja-section {
     padding: 2rem 1rem;
     background: #ffffff;
     position: relative;
     overflow: hidden;
 }
 
-.about-godrej-heading-wrapper {
+.about-raheja-heading-wrapper {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.about-godrej-heading {
+.about-raheja-heading {
     color: #35308E;
     font-weight: 600;
     font-size: 2.0rem;
@@ -1842,7 +1958,7 @@ input[type="tel"] {
     padding-bottom: 3px;
 }
 
-.about-godrej-container {
+.about-raheja-container {
     max-width: 1500px;
     margin: 0 auto;
     background: white;
@@ -1851,14 +1967,14 @@ input[type="tel"] {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.about-godrej-content h2 {
+.about-raheja-content h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #35308E;
 }
 
-.about-godrej-content p {
+.about-raheja-content p {
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: #374151;
@@ -1939,32 +2055,11 @@ input[type="tel"] {
 }
 
 
-/* Responsive Design */
+/* Desktop Navigation */
 
 @media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-    .gallery-card img {
-        height: 160px;
-    }
-    .lightbox-nav-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-    .gallery-heading {
-        font-size: 1.75rem;
-    }
-    .lightbox-caption {
-        font-size: 1rem;
+    .desktop-nav {
+        display: none;
     }
 }
 
@@ -2056,125 +2151,4 @@ input:focus-visible {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-}
-
-
-/* Mobile Responsive Styles */
-
-@media (max-width: 1024px) {
-    .slider-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .right-panel {
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-        max-width: 400px;
-    }
-    .slider {
-        height: 400px;
-    }
-    .info-card {
-        max-width: 280px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media (max-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
-    .mobile-menu-btn {
-        display: flex;
-    }
-    .mobile-menu {
-        display: block;
-    }
-    .slider {
-        height: 350px;
-    }
-    .info-card {
-        max-width: 250px;
-        padding: 1rem;
-    }
-    .info-title {
-        font-size: 1.1rem;
-    }
-    .price-container {
-        grid-template-columns: 1fr;
-    }
-    .price-card {
-        width: 100%;
-        max-width: 320px;
-    }
-    .site-plan-table {
-        font-size: 0.85rem;
-    }
-    .site-plan-table thead th {
-        padding: 10px 8px;
-        font-size: 0.85rem;
-    }
-    .site-plan-table tbody td {
-        padding: 10px 8px;
-        font-size: 0.85rem;
-    }
-    .amenities-container {
-        padding: 0 1rem;
-    }
-    .carousel-scroll {
-        padding: 0 5px;
-    }
-    .arrow-btn {
-        display: none;
-    }
-    .location-features {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider {
-        height: 300px;
-    }
-    .info-card {
-        max-width: 220px;
-        padding: 0.8rem;
-    }
-    .info-title {
-        font-size: 1rem;
-    }
-    .info-price-section {
-        font-size: 0.8rem;
-    }
-    .price-value {
-        font-size: 1.2rem;
-    }
-    .enquire-btn {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-    .welcome-container {
-        padding: 1rem;
-    }
-    .welcome-content h1 {
-        font-size: 1.8rem;
-    }
-    .content-paragraph {
-        font-size: 0.9rem;
-    }
-    .download-brochure-btn {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .interested-btn,
-    .brochure-btn-wrapper .interested-btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
 }
