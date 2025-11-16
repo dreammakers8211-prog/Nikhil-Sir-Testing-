@@ -152,14 +152,13 @@ modalForm.addEventListener("submit", function(e) {
         from_name: nameVal,
         from_email: emailVal,
         phone: countryCodeVal + ' ' + mobileVal,
-        to_name: "Godrej Eternal Palms Team",
-        message: `New enquiry from ${nameVal} (${emailVal}, ${countryCodeVal} ${mobileVal}) for Godrej Eternal Palms property.`,
-        subject: "New Enquiry - Godrej Eternal Palms"
+        to_name: "Raheja Lunaris Team",
+        message: `New enquiry from ${nameVal} (${emailVal}, ${countryCodeVal} ${mobileVal}) for Raheja Lunaris property.`,
+        subject: "New Enquiry - Raheja Lunaris"
 
     };
 
     // Send email using EmailJS
- //   emailjs.send('service_mg4h9r7', 'template_0z91jre', templateParams)
     emailjs.send('', '', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
@@ -190,13 +189,11 @@ modalForm.addEventListener("submit", function(e) {
         });
 });
 
-// Slider functionality
+// Slider functionality with auto-scroll and no arrows
 (() => {
     // Get slider elements
     const slides = document.querySelectorAll(".slider-image");
     const dots = document.querySelectorAll(".slider-dots button");
-    const prevBtn = document.getElementById("prevArrow");
-    const nextBtn = document.getElementById("nextArrow");
     let currentIndex = 0;
     const total = slides.length;
     let autoSlideInterval;
@@ -235,11 +232,6 @@ modalForm.addEventListener("submit", function(e) {
         showSlide(currentIndex + 1);
     }
 
-    // Function to show previous slide
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-
     // Function to reset autoslide timer
     function resetAutoSlide() {
         clearInterval(autoSlideInterval);
@@ -257,19 +249,6 @@ modalForm.addEventListener("submit", function(e) {
         isAutoScrolling = false;
         clearInterval(autoSlideInterval);
     }
-
-    // Event listeners for navigation arrows
-    prevBtn.addEventListener("click", () => {
-        stopAutoSlide();
-        prevSlide();
-        setTimeout(startAutoSlide, 10000); // Resume after 10 seconds
-    });
-
-    nextBtn.addEventListener("click", () => {
-        stopAutoSlide();
-        nextSlide();
-        setTimeout(startAutoSlide, 10000); // Resume after 10 seconds
-    });
 
     // Event listeners for navigation dots
     dots.forEach((dot) => {
@@ -294,7 +273,7 @@ modalForm.addEventListener("submit", function(e) {
     document.addEventListener("keydown", (e) => {
         if (e.key === "ArrowLeft") {
             stopAutoSlide();
-            prevSlide();
+            showSlide(currentIndex - 1);
             setTimeout(startAutoSlide, 10000);
         } else if (e.key === "ArrowRight") {
             stopAutoSlide();
@@ -346,7 +325,7 @@ modalForm.addEventListener("submit", function(e) {
         if (distance > 0) {
             nextSlide();
         } else {
-            prevSlide();
+            showSlide(currentIndex - 1);
         }
     }
 
@@ -419,13 +398,13 @@ document
             from_name: name,
             from_email: email,
             phone: '+91 ' + mobile,
-            to_name: "Godrej Eternal Palms Team",
-            message: `New enquiry from ${name} (${email}, +91 ${mobile}) for Godrej Eternal Palms property through the sidebar form.`,
-            subject: "New Enquiry - Godrej Eternal Palms (Sidebar Form)"
+            to_name: "Raheja Lunaris Team",
+            message: `New enquiry from ${name} (${email}, +91 ${mobile}) for Raheja Lunaris property through the sidebar form.`,
+            subject: "New Enquiry - Raheja Lunaris (Sidebar Form)"
         };
 
         // Send email using EmailJS
-        emailjs.send('service_mg4h9r7', 'template_0z91jre', templateParams)
+        emailjs.send('', '', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
 
